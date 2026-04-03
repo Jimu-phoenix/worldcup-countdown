@@ -10,7 +10,10 @@ function useGoogleFont() {
     link.href = "https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap"
     link.rel = "stylesheet"
     document.head.appendChild(link)
-    return () => document.head.removeChild(link)
+    
+    return () => {
+      document.head.removeChild(link)
+    }
   }, [])
 }
 
@@ -41,7 +44,7 @@ function getTimeLeft() {
 
 // ─── Photos ───────────────────────────────────────────
 const LEFT_PHOTOS = [
-  "wc5.jpg",
+  "/wc5.jpg",
   "/wc1.jpg", "/wc3.jpg",
   "/wc9.jpg",
   "/wc4.jpg",
