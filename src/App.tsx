@@ -224,7 +224,7 @@ export default function TrophyScene() {
               <Stage environment="sunset" intensity={0.7}>
                 <Trophy />
               </Stage>
-              <OrbitControls enableZoom={true} enablePan={true} enableRotate={true} />
+              <OrbitControls enableZoom={false} enablePan={false} enableRotate={true} />
             </Canvas>
           </div>
 
