@@ -198,7 +198,7 @@ export default function TrophyScene() {
             style={{ animation: "fade-in-up 0.8s ease both" }}
           >
             <img
-              src="/wc-logo.png"
+              src="/logo.png"
               alt="FIFA World Cup 2026"
               className="h-14 md:h-20 object-contain"
               onError={(e) => { e.currentTarget.style.display = "none" }}
@@ -221,10 +221,10 @@ export default function TrophyScene() {
           >
             <Canvas camera={{ position: [0, 1, 5] }}>
               <color attach="background" args={["#000000"]} />
-              <Stage environment="city" intensity={0.7}>
+              <Stage environment="sunset" intensity={0.7}>
                 <Trophy />
               </Stage>
-              <OrbitControls enableZoom={false} enablePan={false} enableRotate={false} />
+              <OrbitControls enableZoom={true} enablePan={true} enableRotate={true} />
             </Canvas>
           </div>
 
